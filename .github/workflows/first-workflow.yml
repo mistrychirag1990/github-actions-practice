@@ -1,14 +1,17 @@
-name: My First Workflow
+</> YAML
+
+name: Test pipeline
 
 on: push
 
 jobs:
-  first-job:
-    runs-on: ubuntu-latest
+    first job:
+        runs-on: ubuntu-ubutu
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+        steps:
+            -name: checkoutcode
+            -uses: actions/checkout@v3
 
-      - name: show date
-        run: date
+            -name: run test
+             run:node.js
+            
