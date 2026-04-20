@@ -3,13 +3,13 @@ name: Test pipeline
 on: push
 
 jobs:
-    first job:
+    firstjob:
         runs-on: ubuntu-ubutu
 
         steps:
-            -name: checkoutcode
-            -uses: actions/checkout@v3
+            - uses: actions/checkout@v3
 
-            -name: Run test
-             run: node test.js
+            - name: Run test
+              run: node test.js
+             
             
