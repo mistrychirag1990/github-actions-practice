@@ -1,5 +1,3 @@
-</> YAML
-
 name: Test pipeline
 
 on: push
@@ -12,6 +10,6 @@ jobs:
             -name: checkoutcode
             -uses: actions/checkout@v3
 
-            -name: run test
-             run:node.js
+            -name: Run test
+             run: node test.js
             
